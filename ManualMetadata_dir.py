@@ -7,6 +7,7 @@ from __future__ import print_function
 import pandas as pd
 import sys
 import ast
+import os
 
 def __main_manual(pattern_start = "metadata_", pattern_end = ".csv"):
     path=sys.argv[1] #~/bucket/metadata/000012070903_2019-01-10T20_04_27-Measurement_3/
