@@ -12,6 +12,7 @@ import os
 def __main_manual(pattern_start = "metadata_", pattern_end = ".csv"):
     path=sys.argv[1] #/home/ubuntu/bucket/metadata/000012070903_2019-01-10T20_04_27-Measurement_3
     pattern_custom=sys.argv[3] # a pattern to for example a specific channel
+
     csv_list = os.listdir(path)
     csv_list = [i for i in csv_list if pattern_start in i]
     csv_list = [i for i in csv_list if pattern_end in i]
